@@ -55,19 +55,19 @@ Partial Class FormMenu
         'PetugasToolStripMenuItem
         '
         Me.PetugasToolStripMenuItem.Name = "PetugasToolStripMenuItem"
-        Me.PetugasToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.PetugasToolStripMenuItem.Size = New System.Drawing.Size(158, 26)
         Me.PetugasToolStripMenuItem.Text = "Employee"
         '
         'AnggotaToolStripMenuItem
         '
         Me.AnggotaToolStripMenuItem.Name = "AnggotaToolStripMenuItem"
-        Me.AnggotaToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.AnggotaToolStripMenuItem.Size = New System.Drawing.Size(158, 26)
         Me.AnggotaToolStripMenuItem.Text = "Member"
         '
         'BukuToolStripMenuItem
         '
         Me.BukuToolStripMenuItem.Name = "BukuToolStripMenuItem"
-        Me.BukuToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.BukuToolStripMenuItem.Size = New System.Drawing.Size(158, 26)
         Me.BukuToolStripMenuItem.Text = "Book"
         '
         'TransactionToolStripMenuItem

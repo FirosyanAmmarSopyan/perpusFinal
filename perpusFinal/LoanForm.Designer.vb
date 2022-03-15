@@ -53,13 +53,14 @@ Partial Class LoanForm
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Label13 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(29, 20)
+        Me.Label1.Location = New System.Drawing.Point(29, 119)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(58, 20)
         Me.Label1.TabIndex = 0
@@ -68,7 +69,7 @@ Partial Class LoanForm
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(29, 53)
+        Me.Label2.Location = New System.Drawing.Point(29, 152)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(77, 20)
         Me.Label2.TabIndex = 1
@@ -77,7 +78,7 @@ Partial Class LoanForm
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(29, 86)
+        Me.Label3.Location = New System.Drawing.Point(29, 185)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(60, 20)
         Me.Label3.TabIndex = 2
@@ -86,7 +87,7 @@ Partial Class LoanForm
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(29, 119)
+        Me.Label4.Location = New System.Drawing.Point(29, 218)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(38, 20)
         Me.Label4.TabIndex = 3
@@ -95,7 +96,7 @@ Partial Class LoanForm
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(29, 152)
+        Me.Label5.Location = New System.Drawing.Point(29, 251)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(45, 20)
         Me.Label5.TabIndex = 4
@@ -104,7 +105,7 @@ Partial Class LoanForm
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(29, 192)
+        Me.Label6.Location = New System.Drawing.Point(29, 291)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(103, 20)
         Me.Label6.TabIndex = 5
@@ -113,7 +114,7 @@ Partial Class LoanForm
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(29, 218)
+        Me.Label7.Location = New System.Drawing.Point(29, 317)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(82, 20)
         Me.Label7.TabIndex = 6
@@ -122,7 +123,7 @@ Partial Class LoanForm
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(29, 328)
+        Me.Label8.Location = New System.Drawing.Point(29, 427)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(109, 20)
         Me.Label8.TabIndex = 7
@@ -131,7 +132,7 @@ Partial Class LoanForm
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(29, 367)
+        Me.Label9.Location = New System.Drawing.Point(29, 466)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(92, 20)
         Me.Label9.TabIndex = 8
@@ -140,7 +141,7 @@ Partial Class LoanForm
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(29, 471)
+        Me.Label10.Location = New System.Drawing.Point(29, 570)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(119, 20)
         Me.Label10.TabIndex = 9
@@ -149,7 +150,7 @@ Partial Class LoanForm
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(29, 509)
+        Me.Label11.Location = New System.Drawing.Point(29, 608)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(72, 20)
         Me.Label11.TabIndex = 10
@@ -157,91 +158,91 @@ Partial Class LoanForm
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(167, 53)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(167, 152)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(250, 27)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(279, 27)
         Me.DateTimePicker1.TabIndex = 11
         '
         'DateTimePicker2
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(167, 504)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(167, 603)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(250, 27)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(279, 27)
         Me.DateTimePicker2.TabIndex = 11
         '
         'TextBox1
         '
         Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(167, 20)
+        Me.TextBox1.Location = New System.Drawing.Point(167, 119)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(250, 27)
+        Me.TextBox1.Size = New System.Drawing.Size(279, 27)
         Me.TextBox1.TabIndex = 12
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(167, 86)
+        Me.TextBox2.Location = New System.Drawing.Point(167, 185)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(250, 27)
+        Me.TextBox2.Size = New System.Drawing.Size(203, 27)
         Me.TextBox2.TabIndex = 12
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(167, 119)
+        Me.TextBox3.Location = New System.Drawing.Point(167, 218)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(250, 27)
+        Me.TextBox3.Size = New System.Drawing.Size(279, 27)
         Me.TextBox3.TabIndex = 12
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(167, 152)
+        Me.TextBox4.Location = New System.Drawing.Point(167, 251)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(250, 27)
+        Me.TextBox4.Size = New System.Drawing.Size(279, 27)
         Me.TextBox4.TabIndex = 12
         '
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 20
-        Me.ListBox1.Location = New System.Drawing.Point(167, 218)
+        Me.ListBox1.Location = New System.Drawing.Point(167, 317)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(250, 104)
+        Me.ListBox1.Size = New System.Drawing.Size(279, 104)
         Me.ListBox1.TabIndex = 13
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(167, 185)
+        Me.TextBox5.Location = New System.Drawing.Point(167, 284)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(250, 27)
+        Me.TextBox5.Size = New System.Drawing.Size(279, 27)
         Me.TextBox5.TabIndex = 12
         '
         'ListBox2
         '
         Me.ListBox2.FormattingEnabled = True
         Me.ListBox2.ItemHeight = 20
-        Me.ListBox2.Location = New System.Drawing.Point(167, 361)
+        Me.ListBox2.Location = New System.Drawing.Point(167, 460)
         Me.ListBox2.Name = "ListBox2"
-        Me.ListBox2.Size = New System.Drawing.Size(250, 104)
+        Me.ListBox2.Size = New System.Drawing.Size(279, 104)
         Me.ListBox2.TabIndex = 13
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(167, 328)
+        Me.TextBox6.Location = New System.Drawing.Point(167, 427)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(250, 27)
+        Me.TextBox6.Size = New System.Drawing.Size(279, 27)
         Me.TextBox6.TabIndex = 12
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(167, 471)
+        Me.TextBox7.Location = New System.Drawing.Point(167, 570)
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(250, 27)
+        Me.TextBox7.Size = New System.Drawing.Size(279, 27)
         Me.TextBox7.TabIndex = 12
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(557, 23)
+        Me.Label12.Location = New System.Drawing.Point(557, 122)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(53, 20)
         Me.Label12.TabIndex = 14
@@ -249,14 +250,14 @@ Partial Class LoanForm
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(616, 20)
+        Me.TextBox8.Location = New System.Drawing.Point(616, 119)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(295, 27)
         Me.TextBox8.TabIndex = 12
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(29, 583)
+        Me.Button1.Location = New System.Drawing.Point(29, 682)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(94, 29)
         Me.Button1.TabIndex = 16
@@ -265,7 +266,7 @@ Partial Class LoanForm
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(167, 583)
+        Me.Button2.Location = New System.Drawing.Point(196, 682)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(94, 29)
         Me.Button2.TabIndex = 16
@@ -274,7 +275,7 @@ Partial Class LoanForm
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(323, 583)
+        Me.Button3.Location = New System.Drawing.Point(352, 682)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(94, 29)
         Me.Button3.TabIndex = 16
@@ -283,7 +284,7 @@ Partial Class LoanForm
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(29, 660)
+        Me.Button4.Location = New System.Drawing.Point(29, 759)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(94, 29)
         Me.Button4.TabIndex = 16
@@ -292,7 +293,7 @@ Partial Class LoanForm
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(167, 660)
+        Me.Button5.Location = New System.Drawing.Point(196, 759)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(250, 29)
         Me.Button5.TabIndex = 16
@@ -301,9 +302,9 @@ Partial Class LoanForm
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(423, 86)
+        Me.Button6.Location = New System.Drawing.Point(370, 184)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(94, 29)
+        Me.Button6.Size = New System.Drawing.Size(76, 29)
         Me.Button6.TabIndex = 17
         Me.Button6.Text = "Search"
         Me.Button6.UseVisualStyleBackColor = True
@@ -312,18 +313,29 @@ Partial Class LoanForm
         '
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(557, 76)
+        Me.DataGridView1.Location = New System.Drawing.Point(495, 175)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 29
-        Me.DataGridView1.Size = New System.Drawing.Size(775, 613)
+        Me.DataGridView1.Size = New System.Drawing.Size(837, 613)
         Me.DataGridView1.TabIndex = 18
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Segoe UI", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label13.Location = New System.Drawing.Point(549, 33)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(279, 38)
+        Me.Label13.TabIndex = 19
+        Me.Label13.Text = "LOAN TRANSATION"
         '
         'LoanForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1344, 735)
+        Me.ClientSize = New System.Drawing.Size(1344, 821)
+        Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
@@ -395,4 +407,5 @@ Partial Class LoanForm
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Label13 As Label
 End Class

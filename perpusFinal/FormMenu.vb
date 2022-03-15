@@ -18,4 +18,9 @@
         LoanForm.ShowDialog()
 
     End Sub
+
+    Private Sub ReturnToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReturnToolStripMenuItem.Click
+        ReturnForm.ShowDialog()
+
+    End Sub
 End Class

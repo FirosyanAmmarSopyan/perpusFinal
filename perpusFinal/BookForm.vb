@@ -33,6 +33,7 @@ Public Class BookForm
         TextBox1.Text = UrutanKode
     End Sub
 
+    'untuk insert data
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If TextBox1.Text = "" Or TextBox2.Text = "" Or TextBox3.Text = "" Or TextBox4.Text = "" Or TextBox5.Text = "" Or TextBox6.Text = "" Then
             MsgBox("Pastikan Di isi terlebih dahulu")
@@ -52,6 +53,7 @@ Public Class BookForm
 
     End Sub
 
+    'untuk update data
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         If TextBox1.Text = "" Or TextBox2.Text = "" Or TextBox3.Text = "" Or TextBox4.Text = "" Or TextBox5.Text = "" Or TextBox6.Text = "" Then
             MsgBox("Pastikan Di isi terlebih dahulu")
@@ -64,6 +66,7 @@ Public Class BookForm
         End If
     End Sub
 
+    'untuk delete data
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         If TextBox1.Text = "" Or TextBox2.Text = "" Or TextBox3.Text = "" Or TextBox4.Text = "" Or TextBox5.Text = "" Or TextBox6.Text = "" Then
             MsgBox("Pastikan Di Pilih terlebih dahulu terlebih dahulu")
@@ -87,6 +90,7 @@ Public Class BookForm
 
     End Sub
 
+    'untuk bisa pencet pilih datagrid
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
         Dim i As Integer
         On Error Resume Next ' cara ngatasi error e
@@ -103,9 +107,10 @@ Public Class BookForm
 
     End Sub
 
+    'untuk penyamaan typedata
     Private Sub TextBox6_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox6.KeyPress
         If Not Char.IsNumber(e.KeyChar) And Not e.KeyChar = Chr(Keys.Delete) And Not e.KeyChar = Chr(Keys.Back) And Not e.KeyChar = Chr(Keys.Space) Then
-            MessageBox.Show("eroh number a")
+            MessageBox.Show("just Number")
             e.Handled = True
         End If
     End Sub

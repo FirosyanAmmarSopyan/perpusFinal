@@ -32,6 +32,7 @@ Partial Class FormMenu
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ReturnToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NyobakToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -80,25 +81,32 @@ Partial Class FormMenu
         'LoanToolStripMenuItem
         '
         Me.LoanToolStripMenuItem.Name = "LoanToolStripMenuItem"
-        Me.LoanToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.LoanToolStripMenuItem.Size = New System.Drawing.Size(135, 26)
         Me.LoanToolStripMenuItem.Text = "Loan"
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(221, 6)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(132, 6)
         '
         'ReturnToolStripMenuItem
         '
         Me.ReturnToolStripMenuItem.Name = "ReturnToolStripMenuItem"
-        Me.ReturnToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ReturnToolStripMenuItem.Size = New System.Drawing.Size(135, 26)
         Me.ReturnToolStripMenuItem.Text = "Return"
         '
         'ReportToolStripMenuItem
         '
+        Me.ReportToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NyobakToolStripMenuItem})
         Me.ReportToolStripMenuItem.Name = "ReportToolStripMenuItem"
         Me.ReportToolStripMenuItem.Size = New System.Drawing.Size(68, 24)
         Me.ReportToolStripMenuItem.Text = "Report"
+        '
+        'NyobakToolStripMenuItem
+        '
+        Me.NyobakToolStripMenuItem.Name = "NyobakToolStripMenuItem"
+        Me.NyobakToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.NyobakToolStripMenuItem.Text = "nyobak"
         '
         'FormMenu
         '
@@ -128,4 +136,5 @@ Partial Class FormMenu
     Friend WithEvents ToolStripMenuItem1 As ToolStripSeparator
     Friend WithEvents ReturnToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReportToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NyobakToolStripMenuItem As ToolStripMenuItem
 End Class

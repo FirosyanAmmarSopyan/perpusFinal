@@ -29,3 +29,4 @@ C:\Users\RPL SMK RUS\source\repos\perpusFinal\perpusFinal\obj\Debug\net5.0-windo
 C:\Users\RPL SMK RUS\source\repos\perpusFinal\perpusFinal\obj\Debug\net5.0-windows\perpusFinal.BookForm.resources
 C:\Users\RPL SMK RUS\source\repos\perpusFinal\perpusFinal\obj\Debug\net5.0-windows\perpusFinal.LoanForm.resources
 C:\Users\RPL SMK RUS\source\repos\perpusFinal\perpusFinal\obj\Debug\net5.0-windows\perpusFinal.ReturnForm.resources
+C:\Users\RPL SMK RUS\source\repos\perpusFinal\perpusFinal\obj\Debug\net5.0-windows\perpusFinal.NyobakForm.resources

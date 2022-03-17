@@ -19,6 +19,9 @@
     <Compile Update="MemberForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="NyobakForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ReturnForm.vb">
       <SubType>Form</SubType>
     </Compile>

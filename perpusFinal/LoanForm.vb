@@ -12,7 +12,7 @@ Public Class LoanForm
         TextBox2.Text = ""
         TextBox3.Text = ""
         TextBox4.Text = ""
-        TextBox5.Text = ""
+        'TextBox5.Text = ""
         TextBox6.Text = ""
         TextBox7.Text = ""
         ListBox1.Text = ""
@@ -70,8 +70,13 @@ Public Class LoanForm
             MsgBox("Pastikan Di isi terlebih dahulu")
         Else
             Call Koneksi()
+            'call koneksi langsung nak form load ben ga manggil satu satu iyo gampang wes nek iku
             Cmd = New SqlCommand("insert into TB_PEMINJAMAN values('" & TextBox1.Text & "', '" & DateTimePicker1.Value.Date.ToString & "', '" & TextBox2.Text & "', '" & TextBox3.Text & "', '" & TextBox4.Text & "', '" & TextBox5.Text & "', '" & ListBox1.SelectedItem & "', '" & TextBox6.Text & "', '" & ListBox2.SelectedItem & "' , '" & TextBox7.Text & "', '" & DateTimePicker2.Value.Date.ToString & "')", Conn)
             Cmd.ExecuteNonQuery() 'untuk read data yang sudah dibikin dicommand atas
+            'buat penjumlahan stok
+            Cmd = New SqlCommand("update TB_BUKU set JumlahBuku = " & Val(TextBox4.Text) - Val(TextBox5.Text) & " where IdBuku = '" & TextBox2.Text & "'  ", Conn)
+            Cmd.ExecuteNonQuery()
+
             MsgBox("Data Berhasil Di Buat")
             Call KondisiAwal()
         End If
@@ -113,6 +118,7 @@ Public Class LoanForm
 
     Private Sub LoanForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call KondisiAwal()
+        TextBox5.Text = "1"
 
     End Sub
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
@@ -181,4 +187,13 @@ Public Class LoanForm
             TextBox3.Text = ""
         End If
     End Sub
+
+    Private Sub TextBox8_TextChanged(sender As Object, e As EventArgs) Handles TextBox8.TextChanged
+        Call Koneksi()
+        Da = New SqlDataAdapter("select * from TB_PEMINJAMAN where IdPinjam like '%" & TextBox8.Text & "%' or IdBuku like '%" & TextBox8.Text & "%' or JudulBuku like '%" & TextBox8.Text & "%' ", Conn)
+        Ds = New DataSet
+        Da.Fill(Ds, "TB_PEMINJAMAN")
+        DataGridView1.DataSource = (Ds.Tables("TB_PEMINJAMAN"))
+    End Sub
 End Class
+

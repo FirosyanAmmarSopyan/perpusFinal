@@ -23,4 +23,9 @@
         ReturnForm.ShowDialog()
 
     End Sub
+
+    Private Sub NyobakToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NyobakToolStripMenuItem.Click
+        NyobakForm.ShowDialog()
+
+    End Sub
 End Class

@@ -188,15 +188,19 @@ Partial Class LoanForm
         '
         'TextBox3
         '
+        Me.TextBox3.Enabled = False
         Me.TextBox3.Location = New System.Drawing.Point(167, 218)
         Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.ReadOnly = True
         Me.TextBox3.Size = New System.Drawing.Size(279, 27)
         Me.TextBox3.TabIndex = 12
         '
         'TextBox4
         '
+        Me.TextBox4.Enabled = False
         Me.TextBox4.Location = New System.Drawing.Point(167, 251)
         Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.ReadOnly = True
         Me.TextBox4.Size = New System.Drawing.Size(279, 27)
         Me.TextBox4.TabIndex = 12
         '
@@ -211,10 +215,12 @@ Partial Class LoanForm
         '
         'TextBox5
         '
+        Me.TextBox5.Enabled = False
         Me.TextBox5.Location = New System.Drawing.Point(167, 284)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(279, 27)
         Me.TextBox5.TabIndex = 12
+        Me.TextBox5.Text = "1"
         '
         'ListBox2
         '
@@ -227,15 +233,19 @@ Partial Class LoanForm
         '
         'TextBox6
         '
+        Me.TextBox6.Enabled = False
         Me.TextBox6.Location = New System.Drawing.Point(167, 427)
         Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.ReadOnly = True
         Me.TextBox6.Size = New System.Drawing.Size(279, 27)
         Me.TextBox6.TabIndex = 12
         '
         'TextBox7
         '
+        Me.TextBox7.Enabled = False
         Me.TextBox7.Location = New System.Drawing.Point(167, 570)
         Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.ReadOnly = True
         Me.TextBox7.Size = New System.Drawing.Size(279, 27)
         Me.TextBox7.TabIndex = 12
         '

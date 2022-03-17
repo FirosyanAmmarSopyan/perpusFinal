@@ -25,10 +25,10 @@ Public Class BookForm
         Dr = Cmd.ExecuteReader
         Dr.Read()
         If Not Dr.HasRows Then
-            UrutanKode = "BOOK-" + "000001"
+            UrutanKode = "BOOK-" + "00001"
         Else
-            Hitung = Microsoft.VisualBasic.Right(Dr.GetString(0), 6) + 1
-            UrutanKode = "BOOK-" + Microsoft.VisualBasic.Right("00000" & Hitung, 6)
+            Hitung = Microsoft.VisualBasic.Right(Dr.GetString(0), 5) + 1
+            UrutanKode = "BOOK-" + Microsoft.VisualBasic.Right("00000" & Hitung, 5)
         End If
         TextBox1.Text = UrutanKode
     End Sub
@@ -42,11 +42,13 @@ Public Class BookForm
             Cmd.ExecuteNonQuery() 'untuk read data yang sudah dibikin dicommand atas
             MsgBox("Data Berhasil Di Buat")
             Call KondisiAwal()
+            GenerateIdBuku()
         End If
     End Sub
 
     Private Sub BookForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call KondisiAwal()
+        GenerateIdBuku()
 
     End Sub
 
@@ -99,5 +101,12 @@ Public Class BookForm
         TextBox6.Text = DataGridView1.Item(5, i).Value
 
 
+    End Sub
+
+    Private Sub TextBox6_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox6.KeyPress
+        If Not Char.IsNumber(e.KeyChar) And Not e.KeyChar = Chr(Keys.Delete) And Not e.KeyChar = Chr(Keys.Back) And Not e.KeyChar = Chr(Keys.Space) Then
+            MessageBox.Show("eroh number a")
+            e.Handled = True
+        End If
     End Sub
 End Class
